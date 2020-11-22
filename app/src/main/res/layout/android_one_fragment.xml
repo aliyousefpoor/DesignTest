@@ -62,7 +62,7 @@
             />
 
         <ImageView
-            android:id="@+id/startBucksImage"
+            android:id="@+id/bundleCardView"
             android:layout_width="280dp"
             android:layout_height="176dp"
             android:layout_marginTop="80dp"
@@ -80,8 +80,8 @@
             android:layout_marginTop="14.5dp"
             android:layout_marginEnd="33dp"
             android:src="@drawable/dollar"
-            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
-            app:layout_constraintTop_toTopOf="@id/startBucksImage"
+            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+            app:layout_constraintTop_toTopOf="@id/bundleCardView"
             android:elevation="20dp"
             />
 
@@ -94,8 +94,8 @@
             android:text="5"
             android:textColor="@color/white"
             android:textSize="28sp"
-            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
-            app:layout_constraintTop_toTopOf="@id/startBucksImage"
+            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+            app:layout_constraintTop_toTopOf="@id/bundleCardView"
             android:elevation="20dp"
             />
 
@@ -106,10 +106,10 @@
             android:layout_marginTop="14.5dp"
             android:layout_marginEnd="33dp"
             android:src="@drawable/starbuckslogo"
-            app:layout_constraintBottom_toBottomOf="@id/startBucksImage"
-            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
-            app:layout_constraintStart_toStartOf="@id/startBucksImage"
-            app:layout_constraintTop_toTopOf="@id/startBucksImage"
+            app:layout_constraintBottom_toBottomOf="@id/bundleCardView"
+            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+            app:layout_constraintStart_toStartOf="@id/bundleCardView"
+            app:layout_constraintTop_toTopOf="@id/bundleCardView"
             android:elevation="20dp"
             />
 
@@ -122,8 +122,8 @@
             android:text="Starbucks"
             android:textColor="@color/white"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@id/startBucksImage"
-            app:layout_constraintTop_toTopOf="@id/startBucksImage"
+            app:layout_constraintStart_toStartOf="@id/bundleCardView"
+            app:layout_constraintTop_toTopOf="@id/bundleCardView"
             android:elevation="20dp"
             />
 
@@ -134,9 +134,9 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/bottom_border_style"
-            app:layout_constraintBottom_toBottomOf="@id/startBucksImage"
-            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
-            app:layout_constraintStart_toStartOf="@id/startBucksImage"
+            app:layout_constraintBottom_toBottomOf="@id/bundleCardView"
+            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+            app:layout_constraintStart_toStartOf="@id/bundleCardView"
             android:elevation="20dp"
             />
 
@@ -149,7 +149,7 @@
             android:src="@drawable/amazon_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/startBucksImage"
+            app:layout_constraintTop_toBottomOf="@id/bundleCardView"
             android:elevation="20dp"
             />
 

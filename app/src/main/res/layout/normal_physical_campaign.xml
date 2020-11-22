@@ -81,7 +81,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/startBucksImage"
+            android:id="@+id/bundleCardView"
             android:layout_width="411dp"
             android:layout_height="312dp"
             android:layout_marginTop="391dp"
@@ -257,7 +257,7 @@
             android:layout_marginTop="57dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/startBucksImage" />
+            app:layout_constraintTop_toBottomOf="@id/bundleCardView" />
 
         <TextView
             android:id="@+id/claim"

@@ -60,7 +60,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/startBucksImage"
+            android:id="@+id/bundleCardView"
             android:layout_width="331dp"
             android:layout_height="208dp"
             android:layout_marginTop="80dp"
@@ -78,8 +78,8 @@
             android:layout_marginEnd="33dp"
             android:elevation="20dp"
             android:src="@drawable/dollar"
-            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
-            app:layout_constraintTop_toTopOf="@id/startBucksImage" />
+            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+            app:layout_constraintTop_toTopOf="@id/bundleCardView" />
 
         <TextView
             android:id="@+id/starBucksCost"
@@ -91,8 +91,8 @@
             android:text="5"
             android:textColor="@color/white"
             android:textSize="28sp"
-            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
-            app:layout_constraintTop_toTopOf="@id/startBucksImage" />
+            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+            app:layout_constraintTop_toTopOf="@id/bundleCardView" />
 
         <ImageView
             android:id="@+id/starBucksLogo"
@@ -102,10 +102,10 @@
             android:layout_marginEnd="33dp"
             android:elevation="20dp"
             android:src="@drawable/starbuckslogo"
-            app:layout_constraintBottom_toBottomOf="@id/startBucksImage"
-            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
-            app:layout_constraintStart_toStartOf="@id/startBucksImage"
-            app:layout_constraintTop_toTopOf="@id/startBucksImage" />
+            app:layout_constraintBottom_toBottomOf="@id/bundleCardView"
+            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+            app:layout_constraintStart_toStartOf="@id/bundleCardView"
+            app:layout_constraintTop_toTopOf="@id/bundleCardView" />
 
         <TextView
             android:id="@+id/starBucksName"
@@ -117,8 +117,8 @@
             android:text="Starbucks"
             android:textColor="@color/white"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@id/startBucksImage"
-            app:layout_constraintTop_toTopOf="@id/startBucksImage" />
+            app:layout_constraintStart_toStartOf="@id/bundleCardView"
+            app:layout_constraintTop_toTopOf="@id/bundleCardView" />
 
         <ImageView
             android:id="@+id/starbucksBottom"
@@ -128,9 +128,9 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/bottom_border_style"
             android:elevation="20dp"
-            app:layout_constraintBottom_toBottomOf="@id/startBucksImage"
-            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
-            app:layout_constraintStart_toStartOf="@id/startBucksImage" />
+            app:layout_constraintBottom_toBottomOf="@id/bundleCardView"
+            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+            app:layout_constraintStart_toStartOf="@id/bundleCardView" />
 
         <TextView
             android:id="@+id/description"
@@ -142,7 +142,7 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/startBucksImage" />
+            app:layout_constraintTop_toBottomOf="@id/bundleCardView" />
 
         <TextView
             android:id="@+id/starGiftDescription"
