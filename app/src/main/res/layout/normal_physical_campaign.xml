@@ -284,7 +284,7 @@
 
         <TextView
             android:id="@+id/coinCount"
-            android:layout_width="58dp"
+            android:layout_width="wrap_content"
             android:layout_height="32dp"
             android:layout_marginStart="46dp"
             android:layout_marginTop="36dp"
