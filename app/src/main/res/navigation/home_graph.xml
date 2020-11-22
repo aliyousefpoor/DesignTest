@@ -9,5 +9,35 @@
         android:id="@+id/homeFragment"
         android:name="com.example.designtest.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/home_fragment" />
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_androidOne"
+            app:destination="@id/androidOne" />
+        <action
+            android:id="@+id/action_homeFragment_to_bundlePhysicalCampaign"
+            app:destination="@id/bundlePhysicalCampaign" />
+        <action
+            android:id="@+id/action_homeFragment_to_loadingPhysicalCampaign"
+            app:destination="@id/loadingPhysicalCampaign" />
+        <action
+            android:id="@+id/action_homeFragment_to_normalPhysicalCampaign"
+            app:destination="@id/normalPhysicalCampaign" />
+    </fragment>
+    <fragment
+        android:id="@+id/androidOne"
+        android:name="com.example.designtest.AndroidOne"
+        android:label="AndroidOne"
+        />
+    <fragment
+        android:id="@+id/bundlePhysicalCampaign"
+        android:name="com.example.designtest.BundlePhysicalCampaign"
+        android:label="BundlePhysicalCampaign" />
+    <fragment
+        android:id="@+id/loadingPhysicalCampaign"
+        android:name="com.example.designtest.LoadingPhysicalCampaign"
+        android:label="LoadingPhysicalCampaign" />
+    <fragment
+        android:id="@+id/normalPhysicalCampaign"
+        android:name="com.example.designtest.NormalPhysicalCampaign"
+        android:label="NormalPhysicalCampaign" />
 </navigation>

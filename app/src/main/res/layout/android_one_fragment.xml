@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/obj1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="61dp"
+            android:src="@drawable/obj1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/obj2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="41dp"
+            android:src="@drawable/obj2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/obj3"
+            android:layout_width="12dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/obj3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/leftIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="42dp"
+            android:src="@drawable/left_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/shareIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="22dp"
+            android:src="@drawable/share_icon"
+            app:layout_constraintBottom_toBottomOf="@id/leftIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/startBucksImage"
+            android:layout_width="280dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/starbucks_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="14.5dp"
+            android:layout_marginEnd="33dp"
+            android:src="@drawable/dollar"
+            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
+            app:layout_constraintTop_toTopOf="@id/startBucksImage" />
+
+        <TextView
+            android:id="@+id/starBucksCost"
+            android:layout_width="17dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
+            app:layout_constraintTop_toTopOf="@id/startBucksImage" />
+
+        <ImageView
+            android:id="@+id/starBucksLogo"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="14.5dp"
+            android:layout_marginEnd="33dp"
+            android:src="@drawable/starbuckslogo"
+            app:layout_constraintBottom_toBottomOf="@id/startBucksImage"
+            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
+            app:layout_constraintStart_toStartOf="@id/startBucksImage"
+            app:layout_constraintTop_toTopOf="@id/startBucksImage" />
+
+        <TextView
+            android:id="@+id/starBucksName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="140dp"
+            android:text="Starbucks"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/startBucksImage"
+            app:layout_constraintTop_toTopOf="@id/startBucksImage" />
+
+        <ImageView
+            android:id="@+id/starbucksBottom"
+            android:layout_width="248dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bottom_border_style"
+            app:layout_constraintBottom_toBottomOf="@id/startBucksImage"
+            app:layout_constraintEnd_toEndOf="@id/startBucksImage"
+            app:layout_constraintStart_toStartOf="@id/startBucksImage" />
+
+        <ImageView
+            android:id="@+id/amazonImage"
+            android:layout_width="280dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/starbucks_style"
+            android:src="@drawable/amazonbg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/startBucksImage" />
+
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="14.5dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/dollar"
+            app:layout_constraintEnd_toEndOf="@id/amazonImage"
+            app:layout_constraintTop_toTopOf="@id/amazonImage" />
+
+        <TextView
+            android:id="@+id/amazonCost"
+            android:layout_width="34dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="25"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@id/amazonImage"
+            app:layout_constraintTop_toTopOf="@id/amazonImage" />
+
+        <ImageView
+            android:id="@+id/amazonLogo"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/amazonlogo"
+            app:layout_constraintBottom_toBottomOf="@id/amazonImage"
+            app:layout_constraintEnd_toEndOf="@id/amazonImage"
+            app:layout_constraintStart_toStartOf="@id/amazonImage"
+            app:layout_constraintTop_toTopOf="@id/amazonImage" />
+
+        <TextView
+            android:id="@+id/amazonName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="140dp"
+            android:text="Amazon.com"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/amazonImage"
+            app:layout_constraintTop_toTopOf="@id/amazonImage" />
+
+        <ImageView
+            android:id="@+id/amazonBottom"
+            android:layout_width="248dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bottom_border_style"
+            app:layout_constraintBottom_toBottomOf="@id/amazonImage"
+            app:layout_constraintEnd_toEndOf="@id/amazonImage"
+            app:layout_constraintStart_toStartOf="@id/amazonImage" />
+
+        <ImageView
+            android:id="@+id/targetImage"
+            android:layout_width="280dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/target_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/amazonImage" />
+
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="14.5dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/dollar"
+            app:layout_constraintEnd_toEndOf="@id/targetImage"
+            app:layout_constraintTop_toTopOf="@id/targetImage" />
+
+        <TextView
+            android:id="@+id/targetCost"
+            android:layout_width="34dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="20"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@id/targetImage"
+            app:layout_constraintTop_toTopOf="@id/targetImage" />
+
+        <ImageView
+            android:id="@+id/targetLogo"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/targetlogo"
+            app:layout_constraintBottom_toBottomOf="@id/targetImage"
+            app:layout_constraintEnd_toEndOf="@id/targetImage"
+            app:layout_constraintStart_toStartOf="@id/targetImage"
+            app:layout_constraintTop_toTopOf="@id/targetImage" />
+
+        <TextView
+            android:id="@+id/targetName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="140dp"
+            android:text="Target"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/targetImage"
+            app:layout_constraintTop_toTopOf="@id/targetImage" />
+
+        <ImageView
+            android:id="@+id/targetBottom"
+            android:layout_width="248dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bottom_border_style"
+            app:layout_constraintBottom_toBottomOf="@id/targetImage"
+            app:layout_constraintEnd_toEndOf="@id/targetImage"
+            app:layout_constraintStart_toStartOf="@id/targetImage" />
+
+        <ImageView
+            android:id="@+id/waltImage"
+            android:layout_width="280dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/walt_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/targetImage" />
+
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="14.5dp"
+            android:layout_marginEnd="33dp"
+            android:src="@drawable/dollar"
+            app:layout_constraintEnd_toEndOf="@id/waltImage"
+            app:layout_constraintTop_toTopOf="@id/waltImage" />
+
+        <TextView
+            android:id="@+id/waltCost"
+            android:layout_width="17dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@id/waltImage"
+            app:layout_constraintTop_toTopOf="@id/waltImage" />
+
+        <ImageView
+            android:id="@+id/waltLogo"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/waltlogo"
+            app:layout_constraintBottom_toBottomOf="@id/waltImage"
+            app:layout_constraintEnd_toEndOf="@id/waltImage"
+            app:layout_constraintStart_toStartOf="@id/waltImage"
+            app:layout_constraintTop_toTopOf="@id/waltImage" />
+
+        <TextView
+            android:id="@+id/waltName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="140dp"
+            android:text="Waltmart"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/waltImage"
+            app:layout_constraintTop_toTopOf="@id/waltImage" />
+
+        <ImageView
+            android:id="@+id/waltBottom"
+            android:layout_width="248dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bottom_border_style"
+            app:layout_constraintBottom_toBottomOf="@id/waltImage"
+            app:layout_constraintEnd_toEndOf="@id/waltImage"
+            app:layout_constraintStart_toStartOf="@id/waltImage" />
+
+        <ImageView
+            android:id="@+id/ultaImage"
+            android:layout_width="280dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="186dp"
+            android:background="@drawable/ulta_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/waltImage" />
+
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="14.5dp"
+            android:layout_marginEnd="33dp"
+            android:src="@drawable/dollar"
+            app:layout_constraintEnd_toEndOf="@id/ultaImage"
+            app:layout_constraintTop_toTopOf="@id/ultaImage" />
+
+        <TextView
+            android:id="@+id/ultaCost"
+            android:layout_width="17dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@id/ultaImage"
+            app:layout_constraintTop_toTopOf="@id/ultaImage" />
+
+        <ImageView
+            android:id="@+id/ultaLogo"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ultalogo"
+            app:layout_constraintBottom_toBottomOf="@id/ultaImage"
+            app:layout_constraintEnd_toEndOf="@id/ultaImage"
+            app:layout_constraintStart_toStartOf="@id/ultaImage"
+            app:layout_constraintTop_toTopOf="@id/ultaImage" />
+
+        <TextView
+            android:id="@+id/ultaName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="140dp"
+            android:text="Ulta beauty"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/ultaImage"
+            app:layout_constraintTop_toTopOf="@id/ultaImage" />
+
+        <ImageView
+            android:id="@+id/ultaBottom"
+            android:layout_width="248dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bottom_border_style"
+            app:layout_constraintBottom_toBottomOf="@id/ultaImage"
+            app:layout_constraintEnd_toEndOf="@id/ultaImage"
+            app:layout_constraintStart_toStartOf="@id/ultaImage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

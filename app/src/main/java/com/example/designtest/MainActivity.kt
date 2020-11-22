@@ -16,4 +16,10 @@ class MainActivity : AppCompatActivity() {
         homeNavHost = findViewById(R.id.homeNavHostFragment)
         navController = Navigation.findNavController(this, R.id.homeNavHostFragment)
     }
+
+    override fun onBackPressed() {
+        if (!navController.navigateUp()) {
+            super.onBackPressed()
+        }
+    }
 }
