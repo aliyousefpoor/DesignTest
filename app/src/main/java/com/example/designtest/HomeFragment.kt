@@ -15,6 +15,7 @@ class HomeFragment : Fragment() {
     private lateinit var bundle: Button
     private lateinit var giftCard: Button
     private lateinit var androidOne: Button
+    private lateinit var starbucks: Button
 
     private lateinit var navController: NavController
 
@@ -33,6 +34,7 @@ class HomeFragment : Fragment() {
         bundle = view.findViewById(R.id.bundle)
         giftCard = view.findViewById(R.id.giftCard)
         androidOne = view.findViewById(R.id.android1)
+        starbucks = view.findViewById(R.id.starbucks)
 
 
         navController = Navigation.findNavController(view)
@@ -56,6 +58,10 @@ class HomeFragment : Fragment() {
 
         androidOne.setOnClickListener {
             navController.navigate(R.id.action_homeFragment_to_androidOne)
+        }
+
+        starbucks.setOnClickListener {
+            navController.navigate(R.id.action_homeFragment_to_starbucksGiftCard)
         }
     }
 }

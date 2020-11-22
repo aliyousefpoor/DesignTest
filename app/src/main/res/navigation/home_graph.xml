@@ -22,22 +22,38 @@
         <action
             android:id="@+id/action_homeFragment_to_normalPhysicalCampaign"
             app:destination="@id/normalPhysicalCampaign" />
+        <action
+            android:id="@+id/action_homeFragment_to_starbucksGiftCard"
+            app:destination="@id/starbucksGiftCard" />
     </fragment>
     <fragment
         android:id="@+id/androidOne"
         android:name="com.example.designtest.AndroidOne"
         android:label="AndroidOne"
+        tools:layout="@layout/android_one_fragment"
         />
     <fragment
         android:id="@+id/bundlePhysicalCampaign"
         android:name="com.example.designtest.BundlePhysicalCampaign"
-        android:label="BundlePhysicalCampaign" />
+        android:label="BundlePhysicalCampaign"
+        tools:layout="@layout/bundle_physical_campaign"
+        />
     <fragment
         android:id="@+id/loadingPhysicalCampaign"
         android:name="com.example.designtest.LoadingPhysicalCampaign"
-        android:label="LoadingPhysicalCampaign" />
+        android:label="LoadingPhysicalCampaign"
+        tools:layout="@layout/loading_physical_campaign"
+        />
     <fragment
         android:id="@+id/normalPhysicalCampaign"
         android:name="com.example.designtest.NormalPhysicalCampaign"
-        android:label="NormalPhysicalCampaign" />
+        android:label="NormalPhysicalCampaign"
+        tools:layout="@layout/normal_physical_campaign"
+        />
+    <fragment
+        android:id="@+id/starbucksGiftCard"
+        android:name="com.example.designtest.StarbucksGiftCard"
+        android:label="StarbucksGiftCard"
+        tools:layout="@layout/starbucks_gift_card"
+        />
 </navigation>

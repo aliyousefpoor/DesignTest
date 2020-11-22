@@ -69,6 +69,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/leftIcon" />
 
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="361dp"
+            android:src="@drawable/indicators" />
+
+
         <androidx.cardview.widget.CardView
             android:id="@+id/startBucksImage"
             android:layout_width="411dp"
@@ -205,7 +216,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/link"
                     android:layout_width="92dp"
                     android:layout_height="24dp"
@@ -221,14 +232,20 @@
                         android:gravity="center_vertical"
                         android:text="View more"
                         android:textColor="#FF4F66"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:id="@+id/rightArrow"
-                        android:layout_width="11dp"
-                        android:layout_height="24dp"
+                        android:id="@+id/normalRightArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/viewMore"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="6.29dp"
+                        android:layout_marginTop="6.29dp"
                         android:src="@drawable/right_arrow" />
-                </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -260,7 +277,7 @@
             android:layout_height="20dp"
             android:layout_marginStart="20dp"
             android:background="@drawable/bg"
-            android:src="@drawable/signjpg"
+            android:src="@drawable/sign"
             app:layout_constraintBottom_toBottomOf="@id/coinCount"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/coinCount" />
@@ -305,10 +322,7 @@
             app:layout_constraintTop_toTopOf="@id/view2"
             android:text="Claim Now"
             android:textColor="@color/white"
-            android:textSize="14sp"
-            />
-
-
+            android:textSize="14sp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

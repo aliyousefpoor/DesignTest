@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DesignTest</string>
+    <string name="starGiftDescription">Give the gift of choice and convenience with a Walmart Gift Card! From fashion to furniture to food, Walmart Gift Cards can be redeemed at any Walmart Canada store, on walmart.ca and on Marketplace.</string>
+    <string name="howUsedescription">Nam in neque non orci iaculis tempor sit amet quis libero. Suspendisse id magna eu varius.</string>
+    <string name="howUse1">Click the walmart.ca. The resulting landing page will contain your E-Gift Card information</string>
+    <string name="howUse2">Save or print the E-Gift Card landing page.</string>
+    <string name="howUse3">Present the printed E-Gift Card at any Walmart Canada store or use online at walmart.ca/en</string>
 </resources>
