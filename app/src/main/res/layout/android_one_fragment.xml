@@ -58,8 +58,7 @@
             android:src="@drawable/share"
             app:layout_constraintBottom_toBottomOf="@id/leftIcon"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/bundleCardView"
@@ -74,58 +73,54 @@
             />
 
 
-        <ImageView
-            android:layout_width="16dp"
-            android:layout_height="33dp"
-            android:layout_marginTop="14.5dp"
-            android:layout_marginEnd="33dp"
-            android:src="@drawable/dollar"
-            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
-            app:layout_constraintTop_toTopOf="@id/bundleCardView"
-            android:elevation="20dp"
-            />
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="14.5dp"
+                    android:layout_marginEnd="33dp"
+                    android:elevation="20dp"
+                    android:src="@drawable/dollar"
+                    app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+                    app:layout_constraintTop_toTopOf="@id/bundleCardView" />
 
-        <TextView
-            android:id="@+id/starBucksCost"
-            android:layout_width="17dp"
-            android:layout_height="38dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="16dp"
-            android:text="5"
-            android:textColor="@color/white"
-            android:textSize="28sp"
-            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
-            app:layout_constraintTop_toTopOf="@id/bundleCardView"
-            android:elevation="20dp"
-            />
+                <TextView
+                    android:id="@+id/starBucksCost"
+                    android:layout_width="17dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="20dp"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+                    app:layout_constraintTop_toTopOf="@id/bundleCardView" />
 
-        <ImageView
-            android:id="@+id/starBucksLogo"
-            android:layout_width="120dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="14.5dp"
-            android:layout_marginEnd="33dp"
-            android:src="@drawable/starbuckslogo"
-            app:layout_constraintBottom_toBottomOf="@id/bundleCardView"
-            app:layout_constraintEnd_toEndOf="@id/bundleCardView"
-            app:layout_constraintStart_toStartOf="@id/bundleCardView"
-            app:layout_constraintTop_toTopOf="@id/bundleCardView"
-            android:elevation="20dp"
-            />
+                <ImageView
+                    android:id="@+id/starBucksLogo"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="14.5dp"
+                    android:layout_marginEnd="33dp"
+                    android:elevation="20dp"
+                    android:src="@drawable/starbuckslogo"
+                    app:layout_constraintBottom_toBottomOf="@id/bundleCardView"
+                    app:layout_constraintEnd_toEndOf="@id/bundleCardView"
+                    app:layout_constraintStart_toStartOf="@id/bundleCardView"
+                    app:layout_constraintTop_toTopOf="@id/bundleCardView" />
 
-        <TextView
-            android:id="@+id/starBucksName"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="140dp"
-            android:text="Starbucks"
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@id/bundleCardView"
-            app:layout_constraintTop_toTopOf="@id/bundleCardView"
-            android:elevation="20dp"
-            />
+                <TextView
+                    android:id="@+id/starBucksName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="140dp"
+                    android:elevation="20dp"
+                    android:text="Starbucks"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@id/bundleCardView"
+                    app:layout_constraintTop_toTopOf="@id/bundleCardView" />
 
         <ImageView
             android:id="@+id/starbucksBottom"
@@ -145,13 +140,11 @@
             android:layout_width="280dp"
             android:layout_height="176dp"
             android:layout_marginTop="42dp"
-            android:background="@drawable/starbucks_style"
+            android:elevation="20dp"
             android:src="@drawable/amazon_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bundleCardView"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toBottomOf="@id/bundleCardView" />
 
 
         <ImageView
@@ -159,11 +152,10 @@
             android:layout_height="33dp"
             android:layout_marginTop="14.5dp"
             android:layout_marginEnd="50dp"
+            android:elevation="20dp"
             android:src="@drawable/dollar"
             app:layout_constraintEnd_toEndOf="@id/amazonImage"
-            app:layout_constraintTop_toTopOf="@id/amazonImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/amazonImage" />
 
         <TextView
             android:id="@+id/amazonCost"
@@ -171,25 +163,23 @@
             android:layout_height="38dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
+            android:elevation="20dp"
             android:text="25"
             android:textColor="@color/white"
             android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="@id/amazonImage"
-            app:layout_constraintTop_toTopOf="@id/amazonImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/amazonImage" />
 
         <ImageView
             android:id="@+id/amazonLogo"
             android:layout_width="120dp"
             android:layout_height="100dp"
+            android:elevation="20dp"
             android:src="@drawable/amazonlogo"
             app:layout_constraintBottom_toBottomOf="@id/amazonImage"
             app:layout_constraintEnd_toEndOf="@id/amazonImage"
             app:layout_constraintStart_toStartOf="@id/amazonImage"
-            app:layout_constraintTop_toTopOf="@id/amazonImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/amazonImage" />
 
         <TextView
             android:id="@+id/amazonName"
@@ -197,13 +187,12 @@
             android:layout_height="20dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="140dp"
+            android:elevation="20dp"
             android:text="Amazon.com"
             android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@id/amazonImage"
-            app:layout_constraintTop_toTopOf="@id/amazonImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/amazonImage" />
 
         <ImageView
             android:id="@+id/amazonBottom"
@@ -212,11 +201,10 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/bottom_border_style"
+            android:elevation="20dp"
             app:layout_constraintBottom_toBottomOf="@id/amazonImage"
             app:layout_constraintEnd_toEndOf="@id/amazonImage"
-            app:layout_constraintStart_toStartOf="@id/amazonImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintStart_toStartOf="@id/amazonImage" />
 
         <ImageView
             android:id="@+id/targetImage"
@@ -224,11 +212,10 @@
             android:layout_height="176dp"
             android:layout_marginTop="35dp"
             android:background="@drawable/target_background"
+            android:elevation="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/amazonImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toBottomOf="@id/amazonImage" />
 
 
         <ImageView
@@ -236,11 +223,10 @@
             android:layout_height="33dp"
             android:layout_marginTop="14.5dp"
             android:layout_marginEnd="50dp"
+            android:elevation="20dp"
             android:src="@drawable/dollar"
             app:layout_constraintEnd_toEndOf="@id/targetImage"
-            app:layout_constraintTop_toTopOf="@id/targetImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/targetImage" />
 
         <TextView
             android:id="@+id/targetCost"
@@ -248,25 +234,23 @@
             android:layout_height="38dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
+            android:elevation="20dp"
             android:text="20"
             android:textColor="@color/white"
             android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="@id/targetImage"
-            app:layout_constraintTop_toTopOf="@id/targetImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/targetImage" />
 
         <ImageView
             android:id="@+id/targetLogo"
             android:layout_width="120dp"
             android:layout_height="100dp"
+            android:elevation="20dp"
             android:src="@drawable/targetlogo"
             app:layout_constraintBottom_toBottomOf="@id/targetImage"
             app:layout_constraintEnd_toEndOf="@id/targetImage"
             app:layout_constraintStart_toStartOf="@id/targetImage"
-            app:layout_constraintTop_toTopOf="@id/targetImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/targetImage" />
 
         <TextView
             android:id="@+id/targetName"
@@ -274,13 +258,12 @@
             android:layout_height="20dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="140dp"
+            android:elevation="20dp"
             android:text="Target"
             android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@id/targetImage"
-            app:layout_constraintTop_toTopOf="@id/targetImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/targetImage" />
 
         <ImageView
             android:id="@+id/targetBottom"
@@ -289,11 +272,10 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/bottom_border_style"
+            android:elevation="20dp"
             app:layout_constraintBottom_toBottomOf="@id/targetImage"
             app:layout_constraintEnd_toEndOf="@id/targetImage"
-            app:layout_constraintStart_toStartOf="@id/targetImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintStart_toStartOf="@id/targetImage" />
 
         <ImageView
             android:id="@+id/waltImage"
@@ -301,11 +283,10 @@
             android:layout_height="176dp"
             android:layout_marginTop="35dp"
             android:background="@drawable/walt_background"
+            android:elevation="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/targetImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toBottomOf="@id/targetImage" />
 
 
         <ImageView
@@ -313,11 +294,10 @@
             android:layout_height="33dp"
             android:layout_marginTop="14.5dp"
             android:layout_marginEnd="33dp"
+            android:elevation="20dp"
             android:src="@drawable/dollar"
             app:layout_constraintEnd_toEndOf="@id/waltImage"
-            app:layout_constraintTop_toTopOf="@id/waltImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/waltImage" />
 
         <TextView
             android:id="@+id/waltCost"
@@ -325,25 +305,23 @@
             android:layout_height="38dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
+            android:elevation="20dp"
             android:text="5"
             android:textColor="@color/white"
             android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="@id/waltImage"
-            app:layout_constraintTop_toTopOf="@id/waltImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/waltImage" />
 
         <ImageView
             android:id="@+id/waltLogo"
             android:layout_width="120dp"
             android:layout_height="100dp"
+            android:elevation="20dp"
             android:src="@drawable/waltlogo"
             app:layout_constraintBottom_toBottomOf="@id/waltImage"
             app:layout_constraintEnd_toEndOf="@id/waltImage"
             app:layout_constraintStart_toStartOf="@id/waltImage"
-            app:layout_constraintTop_toTopOf="@id/waltImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/waltImage" />
 
         <TextView
             android:id="@+id/waltName"
@@ -351,13 +329,12 @@
             android:layout_height="20dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="140dp"
+            android:elevation="20dp"
             android:text="Waltmart"
             android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@id/waltImage"
-            app:layout_constraintTop_toTopOf="@id/waltImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/waltImage" />
 
         <ImageView
             android:id="@+id/waltBottom"
@@ -366,11 +343,10 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/bottom_border_style"
+            android:elevation="20dp"
             app:layout_constraintBottom_toBottomOf="@id/waltImage"
             app:layout_constraintEnd_toEndOf="@id/waltImage"
-            app:layout_constraintStart_toStartOf="@id/waltImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintStart_toStartOf="@id/waltImage" />
 
         <ImageView
             android:id="@+id/ultaImage"
@@ -379,12 +355,11 @@
             android:layout_marginTop="938dp"
             android:layout_marginBottom="186dp"
             android:background="@drawable/ulta_background"
+            android:elevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <ImageView
@@ -392,11 +367,10 @@
             android:layout_height="33dp"
             android:layout_marginTop="14.5dp"
             android:layout_marginEnd="33dp"
+            android:elevation="20dp"
             android:src="@drawable/dollar"
             app:layout_constraintEnd_toEndOf="@id/ultaImage"
-            app:layout_constraintTop_toTopOf="@id/ultaImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/ultaImage" />
 
         <TextView
             android:id="@+id/ultaCost"
@@ -404,25 +378,23 @@
             android:layout_height="38dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
+            android:elevation="20dp"
             android:text="5"
             android:textColor="@color/white"
             android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="@id/ultaImage"
-            app:layout_constraintTop_toTopOf="@id/ultaImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/ultaImage" />
 
         <ImageView
             android:id="@+id/ultaLogo"
             android:layout_width="120dp"
             android:layout_height="100dp"
+            android:elevation="20dp"
             android:src="@drawable/ultalogo"
             app:layout_constraintBottom_toBottomOf="@id/ultaImage"
             app:layout_constraintEnd_toEndOf="@id/ultaImage"
             app:layout_constraintStart_toStartOf="@id/ultaImage"
-            app:layout_constraintTop_toTopOf="@id/ultaImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/ultaImage" />
 
         <TextView
             android:id="@+id/ultaName"
@@ -430,13 +402,12 @@
             android:layout_height="20dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="140dp"
+            android:elevation="20dp"
             android:text="Ulta beauty"
             android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@id/ultaImage"
-            app:layout_constraintTop_toTopOf="@id/ultaImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintTop_toTopOf="@id/ultaImage" />
 
         <ImageView
             android:id="@+id/ultaBottom"
@@ -445,10 +416,9 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/bottom_border_style"
+            android:elevation="20dp"
             app:layout_constraintBottom_toBottomOf="@id/ultaImage"
             app:layout_constraintEnd_toEndOf="@id/ultaImage"
-            app:layout_constraintStart_toStartOf="@id/ultaImage"
-            android:elevation="20dp"
-            />
+            app:layout_constraintStart_toStartOf="@id/ultaImage" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

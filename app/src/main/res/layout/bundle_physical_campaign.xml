@@ -9,8 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/productImage"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/bundleViewPager"
             android:layout_width="411dp"
             android:layout_height="411dp"
             android:scaleType="fitXY"
@@ -69,12 +69,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/leftIcon" />
 
-        <ImageView
-            android:id="@+id/indicator"
-            android:layout_width="80dp"
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/bundleIndicator"
+            android:layout_width="wrap_content"
             android:layout_height="10dp"
             android:layout_marginTop="361dp"
-            android:src="@drawable/indicators"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

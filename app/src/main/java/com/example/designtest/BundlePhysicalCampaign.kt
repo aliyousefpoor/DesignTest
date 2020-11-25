@@ -11,6 +11,8 @@ import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager2.widget.ViewPager2
+import me.relex.circleindicator.CircleIndicator3
 import java.util.ArrayList
 
 class BundlePhysicalCampaign : Fragment() {
@@ -18,6 +20,9 @@ class BundlePhysicalCampaign : Fragment() {
     private lateinit var obj3: ImageView
     private lateinit var recyclerView: RecyclerView
     private lateinit var productList: ArrayList<ProductModel>
+    private lateinit var viewPager: ViewPager2
+    private lateinit var indicator: CircleIndicator3
+    private lateinit var images: MutableList<Int>
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,20 +36,27 @@ class BundlePhysicalCampaign : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val list = fillProduct()
+        val productList = fillProduct()
+        val viewPagerList = fillImageList()
         obj3 = view.findViewById(R.id.obj3)
         cardView = view.findViewById(R.id.bundleCardView)
         recyclerView = view.findViewById(R.id.recyclerView)
+        viewPager = view.findViewById(R.id.bundleViewPager)
+        indicator = view.findViewById(R.id.bundleIndicator)
 
         obj3.setOnClickListener {
             Toast.makeText(requireContext(), "heyyy ...", Toast.LENGTH_SHORT).show()
         }
-        val adapter = BundleProductAdapter(list, requireContext())
+        val adapter = BundleProductAdapter(productList, requireContext())
         val layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = layoutManager
         recyclerView.setHasFixedSize(true)
+
+        viewPager.adapter = ViewPagerAdapter(viewPagerList, requireContext())
+        viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        indicator.setViewPager(viewPager)
     }
 
     private fun fillProduct(): ArrayList<ProductModel> {
@@ -90,4 +102,14 @@ class BundlePhysicalCampaign : Fragment() {
         return productList
     }
 
+    private fun fillImageList(): MutableList<Int> {
+        images = ArrayList()
+        images.add(R.drawable.product_image2)
+        images.add(R.drawable.product_image)
+        images.add(R.drawable.product_image2)
+        images.add(R.drawable.product_image)
+        images.add(R.drawable.product_image2)
+
+        return images
+    }
 }

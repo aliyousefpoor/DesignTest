@@ -6,8 +6,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/productImage"
@@ -75,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="312dp"
             android:layout_marginTop="391dp"
-app:cardElevation="0.2dp"
+            app:cardElevation="0.2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -319,8 +318,7 @@ app:cardElevation="0.2dp"
             app:icon="@drawable/loading"
             app:iconGravity="textStart"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/view2"
-            />
+            app:layout_constraintTop_toTopOf="@id/view2" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
