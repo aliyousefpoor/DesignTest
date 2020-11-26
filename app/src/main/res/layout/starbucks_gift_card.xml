@@ -188,6 +188,49 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
+            android:id="@+id/moreDescription"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/starGiftDescription" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/hideLayout"
+            android:layout_width="95dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/moreDescription">
+
+            <TextView
+                android:id="@+id/hide"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:gravity="center_vertical"
+                android:text="Hide"
+                android:textColor="#009B8E"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/hideArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/arrow_up"
+                app:layout_constraintStart_toEndOf="@id/hide"
+                app:layout_constraintTop_toTopOf="@id/hide"
+                app:layout_constraintBottom_toBottomOf="@id/hide"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
             android:id="@+id/howUse"
             android:layout_width="351dp"
             android:layout_height="28dp"
@@ -197,7 +240,7 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/readMoreLayout" />
+            app:layout_constraintTop_toBottomOf="@id/moreDescription" />
 
         <TextView
             android:id="@+id/howUseDescription"
@@ -284,71 +327,71 @@
             android:layout_marginTop="121dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ellipse3"/>
+            app:layout_constraintTop_toBottomOf="@id/ellipse3" />
 
-            <TextView
-                android:id="@+id/claim"
-                android:layout_width="78dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="16dp"
-                android:text="Claim for"
-                android:textColor="#757575"
-                android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/view2" />
+        <TextView
+            android:id="@+id/claim"
+            android:layout_width="78dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="Claim for"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view2" />
 
-            <ImageView
-                android:id="@+id/sign"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="20dp"
-                android:background="@drawable/bg"
-                android:src="@drawable/sign"
-                app:layout_constraintBottom_toBottomOf="@id/coinCount"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/coinCount" />
+        <ImageView
+            android:id="@+id/sign"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/bg"
+            android:src="@drawable/sign"
+            app:layout_constraintBottom_toBottomOf="@id/coinCount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/coinCount" />
 
-            <TextView
-                android:id="@+id/coinCount"
-                android:layout_width="58dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="46dp"
-                android:layout_marginTop="36dp"
-                android:gravity="center_vertical"
-                android:text="6000"
-                android:textColor="#222222"
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/view2" />
+        <TextView
+            android:id="@+id/coinCount"
+            android:layout_width="58dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center_vertical"
+            android:text="6000"
+            android:textColor="#222222"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view2" />
 
-            <TextView
-                android:id="@+id/coin"
-                android:layout_width="56dp"
-                android:layout_height="27dp"
-                android:layout_marginStart="110dp"
-                android:layout_marginTop="38dp"
-                android:gravity="center_vertical"
-                android:text="Coins"
-                android:textColor="#222222"
-                android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/view2" />
+        <TextView
+            android:id="@+id/coin"
+            android:layout_width="56dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="38dp"
+            android:gravity="center_vertical"
+            android:text="Coins"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view2" />
 
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="142dp"
-                android:layout_height="56dp"
-                android:layout_marginStart="249dp"
-                android:layout_marginTop="14dp"
-                android:background="@drawable/button_style"
-                android:backgroundTint="@color/button_color"
-                android:text="Claim Now"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                app:backgroundTint="@color/button_color"
-                app:iconGravity="textStart"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/view2" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="142dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="249dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/button_style"
+            android:backgroundTint="@color/button_color"
+            android:text="Claim Now"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/button_color"
+            app:iconGravity="textStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
