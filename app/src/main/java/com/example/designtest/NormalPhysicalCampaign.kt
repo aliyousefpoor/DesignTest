@@ -1,18 +1,14 @@
 package com.example.designtest
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.apollographql.apollo.ApolloCall
-import com.apollographql.apollo.ApolloClient
-import com.apollographql.apollo.api.Response
-import com.apollographql.apollo.exception.ApolloException
 import me.relex.circleindicator.CircleIndicator3
+import org.koin.android.ext.android.inject
 import java.util.ArrayList
 
 class NormalPhysicalCampaign : Fragment() {
@@ -21,6 +17,7 @@ class NormalPhysicalCampaign : Fragment() {
     private lateinit var viewPager: ViewPager2
     private lateinit var indicator: CircleIndicator3
     private lateinit var graphql: Button
+    private val usersDetailRemoteDataSource: UsersDetailRemoteDataSource by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,7 +34,7 @@ class NormalPhysicalCampaign : Fragment() {
         graphql = view.findViewById(R.id.button1)
 
         graphql.setOnClickListener {
-            provideApollo()
+            usersDetailRemoteDataSource.getUserDetail()
         }
         val list = fillImageList()
 
@@ -57,18 +54,4 @@ class NormalPhysicalCampaign : Fragment() {
         return images
     }
 
-    private fun provideApollo() {
-        val apolloClient =
-            ApolloClient.builder().serverUrl("https://graphqlzero.almansi.me/api").build()
-        apolloClient.query(CommentsQuery.builder().build()).enqueue(object :
-            ApolloCall.Callback<CommentsQuery.Data>() {
-            override fun onResponse(response: Response<CommentsQuery.Data>) {
-                Log.d(TAG, "onResponse: ${response.data()}")
-            }
-
-            override fun onFailure(e: ApolloException) {
-                Log.d(TAG, "onFailure: $e")
-            }
-        })
-    }
 }

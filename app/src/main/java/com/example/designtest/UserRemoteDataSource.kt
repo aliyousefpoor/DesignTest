@@ -2,7 +2,7 @@ package com.example.designtest
 
 import org.koin.dsl.module
 
-val userModule = module {
+val userDetailRemoteModule = module {
     factory {
         UsersDetailRemoteDataSource(get())
     }
