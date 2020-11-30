@@ -24,6 +24,7 @@ query Comments{
             id
             name
             email
+            body
         }
     }
 }
