@@ -314,6 +314,7 @@
             android:layout_marginTop="14dp"
             android:background="@drawable/button_style"
             android:backgroundTint="@color/button_color"
+            android:textAllCaps="false"
             app:backgroundTint="@color/button_color"
             app:icon="@drawable/loading"
             app:iconGravity="textStart"

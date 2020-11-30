@@ -22,9 +22,9 @@ class ViewPagerAdapter(private var images: List<Int>, private var context: Conte
         return images.size
     }
 
-    override fun onBindViewHolder(holder: ViewPagerAdapter.PagerViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: PagerViewHolder, position: Int) {
         val pagerViewHolder: PagerViewHolder = holder as PagerViewHolder
-        holder.onBind(context, images[position])
+        pagerViewHolder.onBind(context, images[position])
     }
 
     class PagerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
