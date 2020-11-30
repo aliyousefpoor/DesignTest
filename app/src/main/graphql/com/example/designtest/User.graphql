@@ -1,0 +1,29 @@
+query UserDetail{
+    users{
+        data{
+            id
+            username
+            name
+            phone
+            email
+        }
+    }
+}
+
+query UserName{
+    users{
+        data{
+            name
+        }
+    }
+}
+
+query Comments{
+    comments{
+        data{
+            id
+            name
+            email
+        }
+    }
+}
